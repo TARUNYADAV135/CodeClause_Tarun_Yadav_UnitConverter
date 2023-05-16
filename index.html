@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="scrollToTop()" id="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="navbar" style="margin-bottom: 0%;">
+        <ul>
+          <li><a href="#">Unit Converter Webpage</a></li>
+        </ul>
+      </div>
+      
+      <nav>
+        <a href="#All_Conversions">All Conversions</a>
+
+        <a href="#Length">Length</a>
+        <a href="#Temperature">Temperature</a>
+        <a href="#Area">Area</a>
+        <a href="#Volume">Volume</a>
+        <a href="#Weight">Weight</a>
+        <a href="#Time">Time</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="All_Conversions">
+      <div class="container1">
+        <h1 style="text-align: center;">Unit Converter</h1>
+  <div class="container">
+    <h1>Example:</h1>
+    <p>For detailed Conversion Scroll down</p>
+    <div class="converter">
+      <input type="number" id="inputValue" placeholder="Enter value">
+      <select id="fromUnit">
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+      
+        <!-- Add more unit options here -->
+      </select>
+      <select id="toUnit">
+        <option value="feet">Feet</option>
+        <option value="meters">Meters</option>
+       
+        <!-- Add more unit options here -->
+      </select>
+      <button onclick="convert()">Convert</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</section>
+
+
+<!-- <br><br><br>
+<br><br> -->
+<section id="Length">
+  <div class="container">
+    <!-- <h1>Unit Converter</h1> -->
+    <div class="section">
+      <h2>Length</h2>
+      <div class="conversion">
+        <!-- <label for="length-input">Enter Length:</label> -->
+        <input type="number" id="length-input" placeholder="Enter Length">
+        <select id="length-from">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="mile">Mile</option>
+          <option value="milimeter">Milimeter</option>
+          <option value="macrometer">macrometer</option>
+          <option value="nanometer">Nanometer</option>
+          <option value="yard">Yard</option>
+          <option value="foot">Foot</option>
+          <option value="inch">Inch</option>
+          <option value="lightyear">Lightyear</option>
+          <!-- Add more options here -->
+        </select>
+        <!-- <label for="length-to">Convert To:</label> -->
+        <select id="length-to">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="mile">Mile</option>
+          <option value="milimeter">Milimeter</option>
+          <option value="macrometer">macrometer</option>
+          <option value="nanometer">Nanometer</option>
+          <option value="yard">Yard</option>
+          <option value="foot">Foot</option>
+          <option value="inch">Inch</option>
+          <option value="lightyear">Lightyear</option>
+
+          <!-- Add more options here -->
+        </select>
+        <br><br>
+        <button id="length-convert">Convert</button>
+      </div>
+      <br>
+      <div id="length-result"></div>
+    </div>
+</section>
+
+<section id="Temperature">
+    <div class="container">
+        <div class="section">
+        <h2>Temperature</h2>
+          <div class="conversion">
+          <!-- <label for="length-input">Enter Length:</label> -->
+          <input type="number" id="temperature-input" placeholder="Enter Temperature">
+          <select id="temperature-from">
+            <option value="celsius">celsius</option>
+            <option value="kelvin">kelvin</option>
+            <option value="fahrenheit">fahrenheit</option>
+         
+          </select>
+          <!-- <label for="length-to">Convert To:</label> -->
+          <select id="temperature-to">
+            <option value="celsius">celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">fahrenheit</option>
+            
+  
+          </select>
+          <br><br>
+          <button id="temperature-convert">Convert</button>
+        </div>
+        <br>
+        <div id="temperature-result"></div>
+      </div>
+</section>
+<section id="Area">
+    <div class="container">
+        <div class="section">
+        <h2>Area</h2>
+          <div class="conversion">
+          <!-- <label for="length-input">Enter Length:</label> -->
+          <input type="number" id="area-input" placeholder="Enter area">
+          <select id="area-from">
+            <option value="square-meter">Sq Meter</option>
+            <option value="square-kilometer">Sq Kilometer</option>
+            <option value="square-mile">Sq Mile</option>
+         
+          </select>
+          <!-- <label for="length-to">Convert To:</label> -->
+          <select id="area-to">
+            <option value="square-meter">Sq Meter</option>
+            <option value="square-kilometer">Sq Kilometer</option>
+            <option value="square-mile">Sq Mile</option>
+            
+  
+          </select>
+          <br><br>
+          <button id="area-convert">Convert</button>
+        </div>
+        <br>
+        <div id="area-result"></div>
+      </div>
+</section>
+
+<section id="Volume">
+    <div class="container">
+        <div class="section">
+        <h2>Volume</h2>
+          <div class="conversion">
+            
+          <input type="number" id="volume-input" placeholder="Enter volume">
+          <select id="volume-from">
+            <option value="cubic-meter">Cubic Meter</option>
+            <option value="liter">Liter</option>
+            <option value="gallon">Gallon</option>
+         
+          </select>
+        
+          <select id="volume-to">
+            <option value="cubic-meter">Cubic Meter</option>
+            <option value="liter">Liter</option>
+            <option value="gallon">Gallon</option>
+            
+  
+          </select>
+          <br><br>
+          <button id="volume-convert">Convert</button>
+        </div>
+        <br>
+        <div id="volume-result"></div>
+      </div>
+</section>
+<section id="Weight">
+    <div class="container">
+        <div class="section">
+        <h2>Weight</h2>
+          <div class="conversion">
+            
+          <input type="number" id="weight-input" placeholder="Enter weight">
+          <select id="weight-from">
+            <option value="kilogram">Kilogram</option>
+              <option value="gram">Gram</option>
+              <option value="pound">Pound</option>
+         
+          </select>
+        
+          <select id="weight-to">
+            <option value="kilogram">Kilogram</option>
+            <option value="gram">Gram</option>
+            <option value="pound">Pound</option>
+            
+  
+          </select>
+          <br><br>
+          <button id="weight-convert">Convert</button>
+        </div>
+        <br>
+        <div id="weight-result"></div>
+      </div>
+</section>
+<section id="Time">
+    <div class="container">
+        <div class="section">
+        <h2>Time</h2>
+          <div class="conversion">
+            
+          <input type="number" id="time-input" placeholder="Enter time">
+          <select id="time-from">
+            <option value="seconds">Seconds</option>
+              <option value="minutes">Minutes</option>
+              <option value="hours">Hours</option>
+         
+          </select>
+        
+          <select id="time-to">
+            <option value="seconds">Seconds</option>
+              <option value="minutes">Minutes</option>
+              <option value="hours">Hours</option>
+            
+  
+          </select>
+          <br><br>
+          <button id="time-convert">Convert</button>
+        </div>
+        <br>
+        <div id="time-result"></div>
+      </div>
+</section>
+<section id="contact">
+    <div class="container1">
+        <h2 style="color: whitesmoke;">Contact for any Queries</h2>
+        
+        <form id="myForm" method="post">
+            <div class="form-group">
+                <label style="color: #333;" for="nameInp">Name:</label>
+                <input type="text" id="naam" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label style="color: #333;" for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label style="color: #333;" for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+           
+            <button type="button" onclick="submitFormData()" >Submit</button>
+        </form>
+        
+        <p>Contact me for any kind of Web development jobs !!!</p>
+        <br>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <a style="color: antiquewhite;" href="mailto:tarunyadav9150@gmail.com"><i class="fa fa-envelope"></i> tarunyadav9150@gmail.com</a>
+            </div>
+            <div class="contact-item">
+            
+                <a style="color: antiquewhite;" href="https://www.linkedin.com/in/tarun-kumar-yadav-122657200"><i class="fa fa-linkedin"></i> <strong>LinkedIn Profile</strong></a>
+            </div>
+            
+            <div class="contact-item">
+                <i style="color: antiquewhite;"  class="fa fa-phone"></i> 6304021215
+            </div>
+    </div>
+    
+</section>
+<footer>
+    <p>&copy; 2023 Tarun Kumar Yadav . All rights reserved.</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
