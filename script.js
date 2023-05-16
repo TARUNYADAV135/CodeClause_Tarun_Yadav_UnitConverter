@@ -126,7 +126,7 @@ function convertArea() {
       'square-meter': 1,
       'square-kilometer': 0.000001,
       'square-mile': 0.000000386102,
-      // Add more conversion factors here
+   
     };
   
     // Perform conversion
@@ -150,7 +150,7 @@ function convertVolume() {
       'cubic-meter': 1,
       'liter': 1000,
       'gallon': 264.172,
-      // Add more conversion factors here
+     
     };
   
     // Perform conversion
@@ -174,7 +174,7 @@ function convertWeight() {
       'kilogram': 1,
       'gram': 1000,
       'pound': 2.20462,
-      // Add more conversion factors here
+    
     };
   
     // Perform conversion
@@ -198,7 +198,7 @@ function convertTime() {
       'seconds': 1,
       'minutes': 1 / 60,
       'hours': 1 / 3600,
-      // Add more conversion factors here
+      
     };
   
     // Perform conversion
